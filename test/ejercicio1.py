@@ -21,19 +21,20 @@ class Punto:
 
     def cuadrante(self):
         if self.x > 0 and self.y > 0:
-            return "El punto " f"({self.x},{self.y})" " pertenece al Primer cuadrante"
+            return f"El punto ({self.x},{self.y}) pertenece al Primer cuadrante"
         elif self.x < 0 and self.y > 0:
-            return "El punto " f"({self.x},{self.y})" " pertenece al Segundo cuadrante"
+            return f"El punto ({self.x},{self.y}) pertenece al Segundo cuadrante"
         elif self.x < 0 and self.y < 0:
-            return "El punto " f"({self.x},{self.y})" "  pertenece al Tercer cuadrante"
+            return f"El punto ({self.x},{self.y}) pertenece al Tercer cuadrante"
         elif self.x > 0 and self.y < 0:
-            return "El punto " f"({self.x},{self.y})" "  pertenece al Cuarto cuadrante"
+            return f"El punto ({self.x},{self.y}) pertenece al Cuarto cuadrante"
         elif self.x == 0 and self.y != 0:
-            return "El punto " f"({self.x},{self.y})" "  se encuentre Sobre el eje Y"
+            return f"El punto ({self.x},{self.y}) se encuentre Sobre el eje Y"
         elif self.x != 0 and self.y == 0:
-            return "El punto " f"({self.x},{self.y})" "  se encuentra Sobre el eje X"
+            return f"El punto ({self.x},{self.y}) se encuentra Sobre el eje X"
         else:
-            return "El punto " f"({self.x},{self.y})" "  se encuentra Sobre el origen"
+            return f"El punto ({self.x},{self.y}) se encuentra Sobre el origen"
+
 
     def vector(self, punto):
         return f"El vestor es: ({punto.x - self.x}, {punto.y - self.y})"
