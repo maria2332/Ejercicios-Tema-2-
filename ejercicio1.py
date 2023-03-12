@@ -17,7 +17,7 @@ class Punto:
         self.y = y
 
     def __str__(self):
-        return f"({self.x}, {self.y})"
+        return "El punto es:" f"({self.x}, {self.y})"
 
     def cuadrante(self):
         if self.x > 0 and self.y > 0:
@@ -40,21 +40,6 @@ class Punto:
 
     def distancia(self, punto):
         return f"La distancia es: {math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)}"
-"""
-class Rectangulo:
-    def __init__(self, punto1, punto2):
-        self.punto1 = punto1
-        self.punto2 = punto2
-
-    def base(self):
-        return abs(self.punto2.x - self.punto1.x)
-
-    def altura(self):
-        return abs(self.punto2.y - self.punto1.y)
-
-    def area(self):
-        return self.base() * self.altura()
-        """ 
 
 punto1 = Punto(2, 3)
 punto2 = Punto(-5, -10)
