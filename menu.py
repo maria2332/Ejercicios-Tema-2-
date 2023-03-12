@@ -18,6 +18,7 @@ def iniciar():
         print(lineas)
         print(("[1]"),"Ejercicio 1: Alumno")
         print(("[2]"),"Ejercicio 2: Número mágico")
+        print(("[8]"),("SALIR"))
         print(lineas)
 
         opcion = input(("Elige una opción: "))
