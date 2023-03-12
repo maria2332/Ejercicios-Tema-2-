@@ -2,7 +2,8 @@ import os
 import sys
 import re
 import helpers
-from ejercicio1 import Alumno 
+from ejercicio1 import Punto
+from ejercicio1 import Rectangulo 
 
 
 
@@ -23,17 +24,17 @@ def iniciar():
         helpers.limpiar_pantalla()
 
         if opcion == "1":
-            print(B"Ejercicio 1: Alumno")
+            print(B"Ejercicio 1: Punto")
             #ejercicicios.alumno
-            Alumno.cadena=input(("Ingresa tu cadena corrupta: "))
-            print(Alumno.formatear_cadena(Alumno.cadena))
+            Punto=input(("Ingresa un punto con cooredenadas x e y: "))
+            print(Punto(Punto))
 
         
 
         elif opcion == "2":
-            print("Ejercicio 2: Número mágico")
-            n=int(input(("Ingresa un número del 1 al 9: ")))
-            print(num(n))
+            print("Ejercicio 2: Rectángulo")
+            n=int(input(("Ingresa un punto: ")))
+            print(Rectangulo(n))
 
         elif opcion == "8":
             print((F"Saliendo..."))
