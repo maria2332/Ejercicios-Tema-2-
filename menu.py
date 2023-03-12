@@ -16,8 +16,8 @@ def iniciar():
         print(lineas)
         print(((("Bienvenido al menú de ejercicios de Python").upper()).center(50)))
         print(lineas)
-        print(("[1]"),"Ejercicio 1: Alumno")
-        print(("[2]"),"Ejercicio 2: Número mágico")
+        print(("[1]"),"Ejercicio 1: Punto")
+        print(("[2]"),"Ejercicio 2: Rectángulo")
         print(("[8]"),("SALIR"))
         print(lineas)
 
@@ -25,10 +25,10 @@ def iniciar():
         helpers.limpiar_pantalla()
 
         if opcion == "1":
-            print(B"Ejercicio 1: Punto")
+            print("Ejercicio 1: Punto")
             #ejercicicios.alumno
             Punto=input(("Ingresa un punto con cooredenadas x e y: "))
-            print(Punto(Punto))
+            print(Punto)
 
         
 

@@ -21,26 +21,41 @@ class Punto:
 
     def cuadrante(self):
         if self.x > 0 and self.y > 0:
-            return "Primer cuadrante"
+            return "El punto " f"({self.x},{self.y})" " pertenece al Primer cuadrante"
         elif self.x < 0 and self.y > 0:
-            return "Segundo cuadrante"
+            return "El punto " f"({self.x},{self.y})" " pertenece al Segundo cuadrante"
         elif self.x < 0 and self.y < 0:
-            return "Tercer cuadrante"
+            return "El punto " f"({self.x},{self.y})" "  pertenece al Tercer cuadrante"
         elif self.x > 0 and self.y < 0:
-            return "Cuarto cuadrante"
+            return "El punto " f"({self.x},{self.y})" "  pertenece al Cuarto cuadrante"
         elif self.x == 0 and self.y != 0:
-            return "Sobre el eje Y"
+            return "El punto " f"({self.x},{self.y})" "  se encuentre Sobre el eje Y"
         elif self.x != 0 and self.y == 0:
-            return "Sobre el eje X"
+            return "El punto " f"({self.x},{self.y})" "  se encuentra Sobre el eje X"
         else:
-            return "Sobre el origen"
+            return "El punto " f"({self.x},{self.y})" "  se encuentra Sobre el origen"
 
     def vector(self, punto):
-        return f"({punto.x - self.x}, {punto.y - self.y})"
+        return f"El vestor es: ({punto.x - self.x}, {punto.y - self.y})"
 
     def distancia(self, punto):
-        return math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)
-    
+        return f"La distancia es: {math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)}"
+"""
+class Rectangulo:
+    def __init__(self, punto1, punto2):
+        self.punto1 = punto1
+        self.punto2 = punto2
+
+    def base(self):
+        return abs(self.punto2.x - self.punto1.x)
+
+    def altura(self):
+        return abs(self.punto2.y - self.punto1.y)
+
+    def area(self):
+        return self.base() * self.altura()
+        """ 
+
 punto1 = Punto(2, 3)
 punto2 = Punto(-5, -10)
 punto3 = Punto(0, 0)
@@ -77,13 +92,14 @@ class Rectangulo:
         self.punto2 = punto2
 
     def base(self):
-        return abs(self.punto2.x - self.punto1.x)
+        return f"La base es: {abs(self.punto2.x - self.punto1.x)}"
 
     def altura(self):
-        return abs(self.punto2.y - self.punto1.y)
+        return f"La altura es: {abs(self.punto2.y - self.punto1.y)}"
 
     def area(self):
-        return self.base() * self.altura()
+        return f"El área es: {self.base() * self.altura()}"
+
     
 punto1 = Punto(2, 3)
 punto2 = Punto(-5, -10)
