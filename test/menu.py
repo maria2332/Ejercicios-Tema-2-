@@ -55,4 +55,4 @@ def menu():
         input("Presione ENTER para continuar...")
         print("="*50)
         
-menu()
+(menu())

@@ -84,11 +84,14 @@ class Rectangulo:
         return f"La altura es: {abs(self.punto2.y - self.punto1.y)}"
 
     def area(self):
-        base_str = self.base().split(":")[1].strip() # extraer el número de la cadena devuelta por base()
-        altura_str = self.altura().split(":")[1].strip() # extraer el número de la cadena devuelta por altura()
-        base = int(base_str)
-        altura = int(altura_str)
-        return f"El área es: {base * altura}"
+        return f"El área es: {abs(self.punto2.x - self.punto1.x) * abs(self.punto2.y - self.punto1.y)}"
+    
+    # def area(self):
+    #     base_str = self.base().split(":")[1].strip() # extraer el número de la cadena devuelta por base()
+    #     altura_str = self.altura().split(":")[1].strip() # extraer el número de la cadena devuelta por altura()
+    #     base = int(base_str)
+    #     altura = int(altura_str)
+    #     return f"El área es: {base * altura}"
     
 punto1 = Punto(2, 3)
 punto2 = Punto(-5, -10)
